@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS item_info;
+ 
+CREATE TABLE item_info (
+  product_code INT AUTO_INCREMENT  PRIMARY KEY,
+  product_name VARCHAR(250) NOT NULL,
+  cost DOUBLE(250) DEFAULT NOT NULL,
+  quantity INT(250) DEFAULT NOT NULL
+);
