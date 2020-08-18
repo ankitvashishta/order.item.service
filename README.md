@@ -3,9 +3,7 @@ Order Item Service For DBS
 
 This is a maven module - a spring boot application, compiled with Java 11.
 
-In the project directory, you can run:
-
-## `mvn clean install`
+In the project directory, you can run: ## `mvn clean install`
 
 Compiles the project and downloads the dependencies.
 
@@ -17,4 +15,4 @@ The application is accessed through a Feign Client by other microservice - ##`or
 
 The H2 database is configured with the application and can be accessed in the browser.
 
-Open[http://localhost:8070/h2-console/](http://localhost:8070/h2-console/) to access the database.
+Open [http://localhost:8070/h2-console/](http://localhost:8070/h2-console/) to access the database.
