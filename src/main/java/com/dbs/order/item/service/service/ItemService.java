@@ -1,5 +1,7 @@
 package com.dbs.order.item.service.service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +49,12 @@ public class ItemService {
 			return item.getCost();
 		}
 		throw new NotFoundException("Item Not Found");
+	}
+
+	public List<ItemInfo> getAllItems() {
+		List<ItemInfo> items = new ArrayList<>();
+		itemRepository.findAll().iterator().forEachRemaining(items::add);
+		return items;
 	}
 
 }

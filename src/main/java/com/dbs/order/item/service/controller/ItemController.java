@@ -1,9 +1,12 @@
 package com.dbs.order.item.service.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,6 +22,7 @@ import com.dbs.order.item.service.service.ItemService;
 
 @RestController
 @RequestMapping("/item")
+@CrossOrigin
 public class ItemController {
 
 	@Autowired
@@ -42,7 +46,7 @@ public class ItemController {
 	 * @return
 	 */
 	@GetMapping("/{id}/info")
-	public ItemInfo getItemInfo(@PathVariable Long id)  {
+	public ItemInfo getItemInfo(@PathVariable Long id) {
 		return itemService.getItemInfo(id);
 	}
 
@@ -67,6 +71,16 @@ public class ItemController {
 	@GetMapping("/{id}/cost")
 	public Double getItemCost(@PathVariable Long id) {
 		return itemService.getItemCost(id);
+	}
+
+	/**
+	 * Get All items.
+	 * 
+	 * @return
+	 */
+	@GetMapping("/all/items")
+	public List<ItemInfo> getAllItems() {
+		return itemService.getAllItems();
 	}
 
 }
