@@ -1,4 +1,4 @@
-package com.dbs.order.item.service.service;
+package com.ankit.order.item.service.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.dbs.order.item.service.model.Item;
+import com.ankit.order.item.service.model.Item;
+import com.ankit.order.item.service.service.ItemService;
 
 @SpringBootTest
 class ItemServiceTest {

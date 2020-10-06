@@ -1,4 +1,4 @@
-package com.dbs.order.item.service.entity;
+package com.ankit.order.item.service.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
-import com.dbs.order.item.service.model.Item;
+import com.ankit.order.item.service.model.Item;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

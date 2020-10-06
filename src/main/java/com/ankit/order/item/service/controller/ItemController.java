@@ -1,4 +1,4 @@
-package com.dbs.order.item.service.controller;
+package com.ankit.order.item.service.controller;
 
 import java.util.List;
 
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dbs.order.item.service.entity.ItemInfo;
-import com.dbs.order.item.service.model.Item;
-import com.dbs.order.item.service.service.ItemService;
+import com.ankit.order.item.service.entity.ItemInfo;
+import com.ankit.order.item.service.model.Item;
+import com.ankit.order.item.service.service.ItemService;
 
 @RestController
 @RequestMapping("/item")

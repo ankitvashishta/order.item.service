@@ -1,4 +1,4 @@
-package com.dbs.order.item.service.model;
+package com.ankit.order.item.service.model;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;

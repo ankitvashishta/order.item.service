@@ -1,4 +1,4 @@
-package com.dbs.order.item.service.service;
+package com.ankit.order.item.service.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,9 +7,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dbs.order.item.service.entity.ItemInfo;
-import com.dbs.order.item.service.model.Item;
-import com.dbs.order.item.service.repository.ItemRepository;
+import com.ankit.order.item.service.entity.ItemInfo;
+import com.ankit.order.item.service.model.Item;
+import com.ankit.order.item.service.repository.ItemRepository;
 
 import javax.ws.rs.NotFoundException;
 

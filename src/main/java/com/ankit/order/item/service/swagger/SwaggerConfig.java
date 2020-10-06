@@ -1,4 +1,4 @@
-package com.dbs.order.item.service.swagger;
+package com.ankit.order.item.service.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
